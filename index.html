@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAE NIME - Streaming Anime</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5ebe0;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff7f50;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to right, #f4a261, #e76f51);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: white;
+            color: #e76f51;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e76f51;
+            color: white;
+        }
+
+        /* MOST POPULAR */
+        .popular {
+            padding: 30px;
+        }
+
+        .anime-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .anime-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .anime-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1 class="logo">BAE <span>NIME</span></h1>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Anime List</a>
+            <a href="#">Manga</a>
+            <a href="#">Community</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h2>Streaming Anime dengan Kualitas Tinggi Hanya di <span>BAE NIME</span>.</h2>
+        <a href="register.html" class="btn">Daftar Sekarang</a>
+    </section>
+
+    <!-- MOST POPULAR SECTION -->
+    <section class="popular">
+        <h2>Most Popular</h2>
+        <div class="anime-list">
+            <div class="anime-card">
+                <img src="img/haikyuu.jpg" alt="Haikyuu">
+                <h3>Haikyuu</h3>
+                <p>Serial manga dan anime tentang voli yang sangat populer.</p>
+            </div>
+            <div class="anime-card">
+                <img src="img/demon_slayer.jpg" alt="Demon Slayer">
+                <h3>Demon Slayer</h3>
+                <p>Kisah petualangan Tanjiro melawan iblis.</p>
+            </div>
+            <div class="anime-card">
+                <img src="img/spy_x_family.jpg" alt="Spy x Family">
+                <h3>Spy x Family</h3>
+                <p>Pertarungan dunia spionase yang seru dan menghibur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 BAE NIME. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

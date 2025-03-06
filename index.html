@@ -5,97 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAE NIME - Streaming Anime</title>
     <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5ebe0;
-        }
-
-        /* HEADER */
-        header {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            background: white;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #ff7f50;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        /* HERO */
-        .hero {
-            text-align: center;
-            padding: 50px;
-            background: linear-gradient(to right, #f4a261, #e76f51);
-            color: white;
-        }
-
-        .hero h2 {
-            font-size: 24px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: white;
-            color: #e76f51;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #e76f51;
-            color: white;
-        }
-
-        /* MOST POPULAR */
-        .popular {
-            padding: 30px;
-        }
-
-        .anime-list {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .anime-card {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            text-align: center;
-            width: 200px;
-        }
-
-        .anime-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5ebe0; }
+        header { display: flex; justify-content: space-between; padding: 20px; background: white; }
+        .logo { font-size: 24px; font-weight: bold; color: #ff7f50; }
+        nav a { margin: 0 15px; text-decoration: none; color: black; font-weight: bold; }
+        .hero { text-align: center; padding: 50px; background: linear-gradient(to right, #f4a261, #e76f51); color: white; }
+        .hero h2 { font-size: 24px; }
+        .btn { display: inline-block; padding: 10px 20px; background: white; color: #e76f51; border: none; cursor: pointer; text-decoration: none; font-weight: bold; border-radius: 5px; transition: 0.3s; }
+        .btn:hover { background: #e76f51; color: white; }
+        .popular { padding: 30px; }
+        .anime-list { display: flex; justify-content: center; gap: 20px; }
+        .anime-card { background: white; padding: 15px; border-radius: 10px; text-align: center; width: 200px; cursor: pointer; transition: 0.3s; }
+        .anime-card:hover { transform: scale(1.05); }
+        .anime-card img { width: 100%; border-radius: 10px; }
+        footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -105,7 +28,7 @@
         <h1 class="logo">BAE <span>NIME</span></h1>
         <nav>
             <a href="#">About</a>
-            <a href="#">Anime List</a>
+            <a href="anime-list.html">Anime List</a>
             <a href="#">Manga</a>
             <a href="#">Community</a>
         </nav>
@@ -121,18 +44,18 @@
     <section class="popular">
         <h2>Most Popular</h2>
         <div class="anime-list">
-            <div class="anime-card">
-                <img src="img/haikyuu.jpg" alt="Haikyuu">
+            <div class="anime-card" onclick="window.location.href='https://ww1.anoboy.app/2020/10/haikyuu-season-4-part-2-episode-1/'">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Haikyuu%21_vol._1.jpg/220px-Haikyuu%21_vol._1.jpg" alt="Haikyuu">
                 <h3>Haikyuu</h3>
                 <p>Serial manga dan anime tentang voli yang sangat populer.</p>
             </div>
-            <div class="anime-card">
-                <img src="img/demon_slayer.jpg" alt="Demon Slayer">
+            <div class="anime-card" onclick="window.location.href='https://ww1.anoboy.app/2019/04/kimetsu-no-yaiba-episode-1/'">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Kimetsu_no_Yaiba_Volume_1.png/220px-Kimetsu_no_Yaiba_Volume_1.png" alt="Demon Slayer">
                 <h3>Demon Slayer</h3>
                 <p>Kisah petualangan Tanjiro melawan iblis.</p>
             </div>
-            <div class="anime-card">
-                <img src="img/spy_x_family.jpg" alt="Spy x Family">
+            <div class="anime-card" onclick="window.location.href='https://ww1.anoboy.app/2023/10/spy-x-family-season-2-episode-1/'">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Spy_x_Family_volume_1_cover.jpg/220px-Spy_x_Family_volume_1_cover.jpg" alt="Spy x Family">
                 <h3>Spy x Family</h3>
                 <p>Pertarungan dunia spionase yang seru dan menghibur.</p>
             </div>

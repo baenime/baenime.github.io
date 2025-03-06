@@ -2,7 +2,6 @@
 <html lang="id">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAE NIME - Streaming Anime</title>
@@ -22,6 +21,15 @@
         .anime-card:hover { transform: scale(1.05); }
         .anime-card img { width: 100%; border-radius: 10px; }
         footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 20px; }
+
+        /* Banner Slider */
+        .slider { position: relative; max-width: 100%; margin: auto; overflow: hidden; }
+        .slides { display: flex; transition: transform 0.5s ease-in-out; }
+        .slide { min-width: 100%; }
+        .slide img { width: 100%; display: block; }
+        .prev, .next { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; cursor: pointer; }
+        .prev { left: 10px; }
+        .next { right: 10px; }
     </style>
 
 </head>
@@ -38,6 +46,17 @@
             <a href="#">Community</a>
         </nav>
     </header>
+
+    <!-- SLIDER BANNER -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="slide-1.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="slide-2.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="slide-3.jpg" alt="Slide 3"></div>
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
 
     <!-- HERO SECTION -->
     <section class="hero">
@@ -73,6 +92,23 @@
     <footer>
         <p>© 2025 BAE NIME. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelector(".slides");
+
+        function showSlide(index) {
+            if (index >= 3) { slideIndex = 0; } 
+            else if (index < 0) { slideIndex = 2; } 
+            else { slideIndex = index; }
+            slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+        }
+
+        function nextSlide() { showSlide(slideIndex + 1); }
+        function prevSlide() { showSlide(slideIndex - 1); }
+
+        setInterval(() => { nextSlide(); }, 3000);
+    </script>
 
 </body>
 </html>
